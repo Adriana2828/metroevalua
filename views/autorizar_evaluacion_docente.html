@@ -10,18 +10,14 @@
         
           
   <title>MetroEvalua</title>
-  <style>input[type=submit] {
-    width: 20%;
-    background-color: #1A237E;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-};
-
-</style>
+ <style>
+      body{
+        background-image:url("http://static.panoramio.com/photos/original/8980581.jpg");
+        background-size: cover;
+        
+      }
+    </style>
+    
  </head>   
     
       
@@ -63,16 +59,16 @@
           <th></th>
           <th></th>
            <th></th>
-          
+           
         </tr>
-      <form action="/preparar_evaluacion_docente" method="POST">  
+     
       </thead>
       
       <tbody>
         
           {{#profesores}}
         <tr>
-          
+           <form action="/preparar_autorizacion_docente" method="POST">  
           <td class="mdl-data-table__cell--non-numeric">{{nombre}}</td>
           <td>{{apellido}}</td>
           <td>{{carnet}}</td>
@@ -80,7 +76,8 @@
           <td>{{correo}}</td>
           <td><input type="hidden" name="id" value={{id}}></td>
            <td><input type="hidden" name="correo2" value={{correo2}}></td>
-      
+          <td><input type="submit" value="dar acceso a resultados"></td>
+              </form> 
         </tr>
           
         {{/profesores}}
@@ -88,8 +85,8 @@
     
     </table>
     <br>
-       <input type="submit" value="enviar autoevaluacion">
-         </form> 
+       
+     
         
     </body>
     

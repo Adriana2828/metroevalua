@@ -1,0 +1,357 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+
+<title>MetroEvalua</title>
+<link rel="stylesheet" type="text/css" media="screen" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/include/form/fonts7.css?1701" />
+<link rel="stylesheet" type="text/css" media="all" href="/include/form/screen7.css?1701" />
+<link rel="stylesheet" type="text/css" media="print" href="/include/form/print7.css?1701" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<style type="text/css" media="all">
+/* LOOK AND FEEL */
+body{
+	background: #FCFCFC;
+	background-size: cover;
+	font-family: 'Lato',sans-serif;
+	font-size: 13px;
+	background-position: 50% 50%;
+	
+}
+
+.header {
+	
+	height:70px;
+	width:110%;
+	margin:-10px;
+}
+.form_table{
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 0;
+	border: 1px solid #D9DDE2;
+	background: #FFFFFF;
+	background-size: cover;
+	color: #36454E;
+	overflow: hidden;
+	box-shadow: none;
+	background-position: 50% 50%;
+	
+}
+
+.form_table a{
+	color: #0D47A1;
+	
+}
+
+.outside a{
+	color: #0D47A1;
+}
+
+.form_table a:visited{
+	color: #0D47A1;
+}
+
+.outside a:visited{
+	color: #0D47A1;
+}
+
+.segment_header{
+	width: auto;
+	margin: 1px;
+	color: #FFFFFF;
+	background: #1C0E7C;
+	background-size: cover;
+	background-repeat: repeat;
+	background-position: 50% 50%;
+	border-radius: 0;
+	
+}
+
+.segment_header h1{
+	border-radius: 0;
+	padding: 20px 10px;
+	font-family: 'Lato',sans-serif;
+
+}
+
+.q{
+	padding: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	float: left;
+	display: block;
+}
+
+.q .question{
+	font-weight: bold;
+}
+
+.q .left_question_first{
+	width: 15em;
+}
+
+.required .icon{
+	background-image: none;
+	background-position: left;
+	background-repeat: no-repeat;
+	font-size: 13px;
+	padding-left: 14px;
+}
+
+.q .text_field{
+	background: #FFFFFF;
+	border: 1px solid #D9DDE2;
+	border-radius: 2px;
+	border-width: 1px;
+	color: #36454E;
+	font-family: 'Lato',sans-serif;
+	font-size: 14px;
+	margin: 1px 0;
+	padding: 10px;
+}
+
+.q .file_upload{
+	background: #FFFFFF;
+	border: 1px solid #D9DDE2;
+	border-radius: 2px;
+	border-width: 1px;
+	color: #36454E;
+	font-family: 'Lato',sans-serif;
+	font-size: 14px;
+	margin-top: 1px;
+	padding: 10px;
+}
+
+.q .file_upload_button{
+	margin-top: 2px;
+}
+
+.q .inline_grid td{
+	padding: 5px;
+	vertical-align: baseline;
+}
+
+.q .drop_down{
+	background: #FFFFFF;
+	border: 1px solid #D9DDE2;
+	border-radius: 2px;
+	border-width: 1px;
+	color: #36454E;
+	font-family: 'Lato',sans-serif;
+	font-size: 14px;
+	margin: 1px 0;
+	padding: 9px;
+}
+
+.q .matrix th{
+	color: #7A858B;
+	background: #F0F2F4;
+	padding: 5px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: bottom;
+}
+
+.q .matrix td{
+	padding: 5px;
+	text-align: center;
+	white-space: nowrap;
+	height: 26px;
+	border-bottom: 1px solid #D9DDE2;
+	border-top: 1px solid #D9DDE2;
+}
+
+.q .matrix td.question{
+	border-right: 1px solid #D9DDE2;
+	font-weight: normal;
+}
+
+.q .matrix .multi_scale_sub th{
+	font-weight: normal;
+	border-top: 1px solid #D9DDE2 !important;
+	background: #F4F6F9;
+}
+
+.q .matrix .multi_scale_break{
+	border-right: 1px solid #D9DDE2;
+}
+
+.q .matrix_row_dark td{
+	color: #36454E;
+	background: #FCFCFC;
+}
+
+.q .matrix_row_dark td.question{
+	color: #36454E;
+	background: #FCFCFC;
+}
+
+.q .matrix_row_light td{
+	color: #36454E;
+	background: #FFFFFF;
+}
+
+.q .matrix_row_light td.question{
+	color: #36454E;
+	background: #FFFFFF;
+}
+
+.q .rating_ranking td{
+	padding: 5px;
+}
+
+.q .scroller{
+	border: 1px solid #D9DDE2;
+}
+
+.highlight{
+	background: #FFF9C4             !important;
+}
+
+tr.highlight td{
+	background: #FFF9C4             !important;
+}
+
+.outside{
+	color: #36454E;
+}
+
+.outside_container{
+	width: 650px;
+	padding: 1em 0;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #36454E;
+;
+}
+
+.outside_container .submit_button{
+	color: #FFFFFF !important;
+	background: #1C0E7C;
+	background-size: auto;
+	border-style: none;
+	border-width: 0px;
+	border-color: #FFFFFF;
+	border-radius: 2px;
+	text-align: center;
+	font-family: 'Lato',sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	min-width: 20%;
+	padding: 10px 20px;
+	text-transform: none;
+	box-shadow: none;
+}
+
+.outside_container .submit_button:hover{
+	background: #106AB7;
+	border-color: #BBBBBB;
+	background-size: auto;
+}
+
+.progressBarWrapper{
+	border-radius: 0;
+	background: #FFFFFF;
+	background-size: cover;
+	border-color: #D9DDE2;
+}
+
+.progressBarBack{
+	color: #FFFFFF;
+	background-color: #1C0E7C;
+}
+
+.progressBarFront{
+	color: #36454E;
+}
+
+.ui-widget{
+	font-family: 'Lato',sans-serif;
+}
+
+.invalid{
+	background: #FDF1F0;
+}
+
+.invalid .invalid_message{
+	color: #EC756B;
+	background: #FDF1F0;
+	border: 1px solid #EC756B;
+	border-radius: 2px;
+}
+
+.form_table.invalid{
+	border: 2px solid #EC756B;
+}
+
+.invalid .matrix .invalid_row{
+	background: #FDF1F0;
+}
+input[type=submit] {
+    width: 50%;
+    background-color: #1A237E;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+</style>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/include/form/form7.js?1701"></script>
+</head>
+<body>
+{{#nombres}}	
+<div class="form_table" >
+<div class="segment_header" style="width:auto;text-align:Left;"><h1 style="font-size:30px;padding:20px 1em ;">Evaluacion al Docente</h1></div>	
+<div class="segment_header" style="width:auto;text-align:Left;"><h1 style="font-size:25px;padding:15px 1em ;">Nombre del Profesor: {{nombre}} {{apellido}} <br>Materia y Codigo: {{materia}} <br>Seccion:{{seccion}} </h1></div>
+</div>
+{{/nombres}}
+<!-- BEGIN_ITEMS -->
+<div class="form_table" >
+<div id="q28" class="q full_width" >
+<a class="item_anchor" name="ItemAnchor0"></a>
+<div class="segment_header" style="width:auto;text-align:Left;"><h4 style="font-size:20px;padding:10px 1em ;">Evalue los siguientes aspectos del profesor en este curso, otorgando el puntaje que mejor refleje su opinion al respecto.<br></h4></div>
+<div class="segment_header" style="width:auto;text-align:Left;"><h4 style="font-size:15px;padding:15px 1em ;">1:Totalmente en desacuerdo<br>2:En desacuerdo<br>3:Ni de acuerdo ni en desacuerdo<br>4:De Acuerdo<br>5:Totalmente de acuerdo</h4></div>
+
+{{#preguntas}}
+<h2>{{enunciado}}</h2>       
+<form action="/email_estudiante" method="POST">
+<input type="number" placeholder="" name="valor" min=1 max=5>
+<td><input type="hidden" name="preguntaid" id="preguntaid" value={{preguntaid}}></td>
+<td><input type="hidden" name="evaluacionid" id="evaluacionid" value={{evaluacionid}}></td>
+<td><input type="hidden" name="materiaid" id="materiaid" value={{materiaid}}></td>
+<td><input type="hidden" name="seccionid" id="evaluacionid" value={{seccionid}}></td>
+<td><input type="hidden" name="estudianteid" id="preguntaid" value={{estudianteid}}></td>
+
+<br>
+{{/preguntas}}
+{{#otros}}
+<td><input type="hidden" name="materianombre" id="materianombre" value={{materianombre}}></td>
+<td><input type="hidden" name="profesornombre" id="profesornombre" value={{profesornombre}}></td>
+<td><input type="hidden" name="profesorapellido" id="profesorapellido" value={{profesorapellido}}></td>
+<td><input type="hidden" name="codigoseccion" id="codigoseccion" value={{codigoseccion}}></td>
+{{/otros}}
+<input type="submit"value="enviar respuestas">
+
+</form>
+
+
+
+
+
+<div class="clear"></div>
+<div style="position:relative;font-family:'Open Sans',Helvetica,Arial,sans-serif;font-size:12px;line-height:36px;text-align:left;background-color:#fafafa;height:35px;margin-top:10px;overflow:hidden;">
+
+</div>
+<!-- END_ITEMS -->
+
+</body>
+</html>

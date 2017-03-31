@@ -27,50 +27,46 @@
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
           <!-- Title -->
-          <span class="mdl-layout-title">Jefe del Departamento</span>
+          {{#nombre}}
+          <span class="mdl-layout-title">Resultados de Evaluacion Docente realizada por la seccion {{seccion}}</span>
+          {{/nombre}}        
         </div>
         <!-- Tabs -->
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
 
+        
         </div>
       </header>
-      <div class="mdl-layout__drawer">
-
-       
-             <span class="mdl-layout-title">Sesion Jefe Dpto </span>
-             <input type="button" value="Pagina de inicio" onclick="history.back(-3)" />
-          <a class="mdl-navigation__link" href="/">Cerrar Sesion</a>
-      </div>
+      
+      
       <main class="mdl-layout__content" align=CENTER>
-         <h3>Estudiantes</h3>
-         <h4>Se ha enviado la evaluacion a los siguientes estudiantes</h4>
+          {{#nombres}}
+         <h3>Resultados</h3>
+         <h4>Seccion:{{seccion}} Docente:{{docente}}</h4>
+         
+          {{/nombres}} 
         <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" align=CENTER>
       <thead>
         <tr>
-          <th class="mdl-data-table__cell--non-numeric">Nombre</th>
-          <th>Apellido</th>
-          <th>Carnet</th>
-          <th>Cedula</th>
-          <th>Correo</th>
-          <th></th>
+            
+          <th align="left">Pregunta</th>
+          <th align="left">Resultado</th>
+          
+        
      
         </tr>
       </thead>
       <tbody>
-          {{#estudiantes}}
+          {{#resultados}}
         <tr>
-          <td class="mdl-data-table__cell--non-numeric">{{nombre}}</td>
-          <td>{{apellido}}</td>
-          <td>{{carnet}}</td>
-          <td>{{cedula}}</td>
-          <td>{{correo}}</td>
-          <td><input type="hidden" name="materianombre" value={{materianombre}}></td>
-           
+          <td align="left">{{enunciado}}</td>
+          <td align="left">{{respuesta}}</td>
         </tr>
-        {{/estudiantes}}
+        {{/resultados}}
       </tbody>
-     
- 
+        {{#total}}
+        <h2>Puntaje Total: {{puntajetotal}}</h2>
+        {{/total}}
     </table>
        
         

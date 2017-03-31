@@ -1,0 +1,151 @@
+<html>
+    
+    <head>
+        
+         <!-- Material Design Lite -->
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+       
+  <title>MetroEvalua</title>    
+        
+    <style>
+      body{
+        background-image:url("http://static.panoramio.com/photos/original/8980581.jpg");
+        background-size: cover;
+        
+      }
+    </style>
+    
+      
+    <body>
+        
+          <!-- Simple header with fixed tabs. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+                mdl-layout--fixed-tabs">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">Jefe del Departamento </span>
+        </div>
+        <!-- Tabs -->
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+       
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Activar Evaluacion</span>
+        <a class="mdl-navigation__link" href="/docentes">Docente</a>
+         <a class="mdl-navigation__link" href="/materias">Estudiante</a>
+          
+             <span class="mdl-layout-title">Sesion Jefe Dpto </span>
+          <a class="mdl-navigation__link" href="/">Cerrar Sesion</a>
+      </div>
+      <main class="mdl-layout__content">
+        <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+          <div class="page-content"><!-- Your content goes here --></div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+          <div class="page-content"><!-- Your content goes here --></div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+          <div class="page-content"><!-- Your content goes here --></div>
+        </section>
+         <section class="mdl-layout__tab-panel" id="fixed-tab-4">
+          <div class="page-content"><!-- Your content goes here --></div>
+        </section>
+      </main>
+    </div>
+        
+        
+        
+        
+    </body>
+    
+    
+    
+    
+    
+    
+    
+</html><html>
+    
+    <head>
+        
+         <!-- Material Design Lite -->
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+        
+    
+    
+      
+    <body>
+        
+          <!-- Simple header with fixed tabs. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+                mdl-layout--fixed-tabs">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">Jefe del Departamento </span>
+        </div>
+        <!-- Tabs -->
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Sesion Jefe Dpto </span>
+        <input type="button" value="Pagina de inicio" onclick="history.back(-1)" />
+        <a class="mdl-navigation__link" href="/">Cerrar Sesion</a>
+      </div>
+      <main class="mdl-layout__content" align=CENTER>
+       <h3>Secciones con Evaluaciones Disponibles</h3>
+        <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" align=CENTER method="POST">
+      <thead>
+        <tr>
+          <th class="mdl-data-table__cell--non-numeric">Codigo de Trimestre</th>
+          <th>Capacidad</th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+             <th></th>
+        </tr>
+      </thead>
+      <tbody>
+          {{#secciones}}
+        <tr>
+          <form action="/mostrar_resultados" method="POST">
+          <td class="mdl-data-table__cell--non-numeric">{{codigo_tri}}</td>
+          <td>{{capacidad}}</td>
+          <td><input type="submit" value="ver resultados" ></td>
+          <td><input type="hidden" name="id" value={{id}}></td>
+          <td><input type="hidden" name="codigo_tri" value={{codigo_tri}}></td>
+          <td><input type="hidden" name="docenteid" value={{docenteid}}></td>
+          <td><input type="hidden" name="materiaid" value={{materiaid}}></td>
+          <td><input type="hidden" name="materianombre" value={{materianombre}}></td>
+          <td><input type="hidden" name="evaluacionid" value={{evaluacionid}}></td>  
+          </form> 
+        </tr>
+        {{/secciones}}
+      </tbody>
+     
+    </table>
+        
+        
+    </body>
+    
+    
+    
+    
+    
+    
+    
+</html>

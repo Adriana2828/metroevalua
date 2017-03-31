@@ -1,5 +1,4 @@
 <html>
-    
     <head>
         
          <!-- Material Design Lite -->
@@ -8,16 +7,18 @@
     <!-- Material Design icon font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         
-           
+   
   <title>MetroEvalua</title>
-    
-    <style>
+       <style>
       body{
         background-image:url("http://static.panoramio.com/photos/original/8980581.jpg");
         background-size: cover;
         
       }
-    </style>
+    </style> 
+    </head>    
+    
+    
       
     <body>
         
@@ -27,52 +28,57 @@
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
           <!-- Title -->
-          <span class="mdl-layout-title">Jefe del Departamento</span>
+          {{#nombres}}
+          <span class="mdl-layout-title">Jefe del Departamento de {{departamentonombre}}</span>
+          {{/nombres}}
         </div>
         <!-- Tabs -->
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
 
+   
         </div>
       </header>
       <div class="mdl-layout__drawer">
-
+        
        
              <span class="mdl-layout-title">Sesion Jefe Dpto </span>
-             <input type="button" value="Pagina de inicio" onclick="history.back(-3)" />
+             <input type="button" value="Pagina de inicio" onclick="history.back(-1)" />
           <a class="mdl-navigation__link" href="/">Cerrar Sesion</a>
       </div>
       <main class="mdl-layout__content" align=CENTER>
-         <h3>Estudiantes</h3>
-         <h4>Se ha enviado la evaluacion a los siguientes estudiantes</h4>
-        <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" align=CENTER>
+       <h3>Materias del departamento</h3>
+      
+        <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" align=CENTER >
       <thead>
         <tr>
-          <th class="mdl-data-table__cell--non-numeric">Nombre</th>
-          <th>Apellido</th>
-          <th>Carnet</th>
-          <th>Cedula</th>
-          <th>Correo</th>
+          <th class="mdl-data-table__cell--non-numeric">Codigo</th>
+          <th>Nombre</th>
           <th></th>
-     
+          <th></th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
-          {{#estudiantes}}
+          {{#materias}}
         <tr>
-          <td class="mdl-data-table__cell--non-numeric">{{nombre}}</td>
-          <td>{{apellido}}</td>
-          <td>{{carnet}}</td>
-          <td>{{cedula}}</td>
-          <td>{{correo}}</td>
-          <td><input type="hidden" name="materianombre" value={{materianombre}}></td>
-           
+          <form action="/secciones" method="POST">
+          
+          <td class="mdl-data-table__cell--non-numeric">{{codigo}}</td>
+          <td>{{nombre}}</td>
+           <td><input type="submit" value="Ver Secciones" ></td>
+           <td><input type="hidden" name="id" value={{id}}></td>
+           <td><input type="hidden"  name="nombre" value={{nombre}}></td>
+          </form>
         </tr>
-        {{/estudiantes}}
+        {{/materias}}
       </tbody>
      
- 
-    </table>
        
+    </table>
+    
+    
+    
+     
         
     </body>
     

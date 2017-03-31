@@ -8,20 +8,15 @@
     <!-- Material Design icon font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         
-          
+           
   <title>MetroEvalua</title>
-  <style>input[type=submit] {
-    width: 20%;
-    background-color: #1A237E;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-};
-
-</style>
+ <style>
+      body{
+        background-image:url("http://static.panoramio.com/photos/original/8980581.jpg");
+        background-size: cover;
+        
+      }
+    </style>
  </head>   
     
       
@@ -41,16 +36,15 @@
         </div>
       </header>
       <div class="mdl-layout__drawer">
-       
+
        
              <span class="mdl-layout-title">Sesion Jefe Dpto </span>
-            <input type="button" value="Pagina de inicio" onclick="history.back(-1)" />
+          <input type="button" value="Pagina de inicio" onclick="history.back(-1)" />
           <a class="mdl-navigation__link" href="/">Cerrar Sesion</a>
       </div>
       <main class="mdl-layout__content" align=CENTER>
-        {{#nombres}}
-         <h3>Profesores del departamento de {{nombredpto}}</h3>
-         {{/nombres}}
+         <h3>Profesores del departamento</h3>
+         
         <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" align=CENTER>
       <thead>
         <tr>
@@ -59,28 +53,28 @@
           <th>Carnet</th>
           <th>Cedula</th>
           <th>Correo</th>
-          <th><td>
+          <th></th>
           <th></th>
           <th></th>
            <th></th>
-          
         </tr>
-      <form action="/preparar_evaluacion_docente" method="POST">  
+ 
       </thead>
       
       <tbody>
         
           {{#profesores}}
         <tr>
-          
+        <form action="/preparar_evaluacion_jefe" method="POST"> 
           <td class="mdl-data-table__cell--non-numeric">{{nombre}}</td>
           <td>{{apellido}}</td>
           <td>{{carnet}}</td>
           <td>{{cedula}}</td>
           <td>{{correo}}</td>
-          <td><input type="hidden" name="id" value={{id}}></td>
-           <td><input type="hidden" name="correo2" value={{correo2}}></td>
-      
+          <td><input type="hidden" name="docenteid" value={{docenteid}}></td>
+          <td><input type="hidden" name="correo2" value={{correo2}}></td>
+          <td><input type="submit" value="evaluar"></td>
+           </form> 
         </tr>
           
         {{/profesores}}
@@ -88,8 +82,8 @@
     
     </table>
     <br>
-       <input type="submit" value="enviar autoevaluacion">
-         </form> 
+      
+        
         
     </body>
     

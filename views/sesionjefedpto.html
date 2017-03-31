@@ -8,8 +8,15 @@
     <!-- Material Design icon font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         
+      
+  <title>MetroEvalua</title>
+    <style>
+      body{
+        background-image:url("http://static.panoramio.com/photos/original/8980581.jpg");
+        background-size: cover;
         
-    
+      }
+    </style>
     
       
     <body>
@@ -20,21 +27,35 @@
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
           <!-- Title -->
-          <span class="mdl-layout-title">Jefe del Departamento X</span>
+          {{#usuarios}}
+          <span class="mdl-layout-title">Jefe del Departamento de {{departamentonombre1}} // Docente: {{nombre}}</span>
+          {{/usuarios}}
         </div>
         <!-- Tabs -->
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-
-          <a href="/enviar_evaluacion_docente" class="mdl-layout__tab">Autorizar Acceso</a>
-          <a href="#fixed-tab-3" class="mdl-layout__tab">Consultar Resultados</a>
-           <a href="#fixed-tab-3" class="mdl-layout__tab">Consultar Estado del Proceso</a>
+          {{#jefe}}
+          <a href="/docentes_j/{{departamentoid}}" class="mdl-layout__tab">Evaluar como jefe de dpto</a>
+          {{/jefe}}
+          {{#autorizar}}
+          <a href="/docentes2/{{departamentoid}}/{{departamentonombre2}}" class="mdl-layout__tab">Autorizar Acceso</a>
+          {{/autorizar}}
+          {{#resultados1}}
+          <a href="/secciones2/{{departamentoid}}/{{departamentonombre2}}" class="mdl-layout__tab">Resultados Evaluacion Estudiantil</a>
+          {{/resultados1}}
+          {{#resultados2}}
+          <a href="/docentes_2/{{departamentoid}}/{{departamentonombre2}}" class="mdl-layout__tab">Resultados Autoevaluacion Docente</a>
+          {{/resultados2}} 
+           
         </div>
       </header>
       <div class="mdl-layout__drawer">
         <span class="mdl-layout-title">Activar Evaluacion</span>
-        <a class="mdl-navigation__link" href="/enviar_evaluacion_docente">Docente</a>
-          <a class="mdl-navigation__link" href="/enviar_evaluacion_estudiante">Estudiante</a>
-          
+        {{#docentes}}
+        <a class="mdl-navigation__link" href="/docentes/{{departamentoid}}/{{departamentonombre2}}">Docente</a>
+        {{/docentes}}
+        {{#materias}}
+          <a class="mdl-navigation__link" href="/materias/{{departamentoid}}/{{departamentonombre2}}">Estudiante</a>
+          {{/materias}}
              <span class="mdl-layout-title">Sesion Jefe Dpto </span>
           <a class="mdl-navigation__link" href="/">Cerrar Sesion</a>
       </div>
