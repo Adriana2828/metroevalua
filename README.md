@@ -3,10 +3,14 @@
 ## Framework
 ![hapijs](https://camo.githubusercontent.com/16f4a37b7e2086b6e44dcb0cdfaf9e41f5738278/68747470733a2f2f7261772e6769746875622e636f6d2f686170696a732f686170692f6d61737465722f696d616765732f686170692e706e67)
 
-![sequelize](https://i.blogs.es/91493f/sequelize/650_1200.png)
+## Manejador de Base de Datos
 
 ![mysql](https://upload.wikimedia.org/wikipedia/en/thumb/6/62/MySQL.svg/1200px-MySQL.svg.png)
 
+
+## ORM
+
+![sequelize](https://i.blogs.es/91493f/sequelize/650_1200.png)
 
 ## Arquitectura
 
@@ -28,7 +32,7 @@ Cada jefe de departamento de la Universidad tiene una cuenta, con la cual podra 
 ###### Autoevaluacion: El jefe de dpto tiene acceso directo al instrumento de evaluacion correspondiente a cada docente, y puede realizar la evaluacion como superior, y puede realizar su autoevaluacion.
 
 ## Los estudiantes no tienen cuenta:
-###### solo reciben un email para llenar la encuesta, y solo pueden realizarla una sola vez, ya que el link proporcionado a cada estudiante, esta registrado en la base de datos, y se sabra si ya contesto o no la evaluacion.
+###### Solo reciben un email para llenar la encuesta, y solo pueden realizarla una sola vez, ya que el link proporcionado a cada estudiante, esta registrado en la base de datos, y se sabra si ya contesto o no la evaluacion.
 
 ## Solo los jefes del dpto y los miembros pertenecientes al Vicerrectorado, tienen una cuenta activa.
 
