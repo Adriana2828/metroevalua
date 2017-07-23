@@ -3,7 +3,7 @@
 ## Framework
 ![hapijs](https://camo.githubusercontent.com/16f4a37b7e2086b6e44dcb0cdfaf9e41f5738278/68747470733a2f2f7261772e6769746875622e636f6d2f686170696a732f686170692f6d61737465722f696d616765732f686170692e706e67)
 
-!sequelize](https://i.blogs.es/91493f/sequelize/650_1200.png)
+![sequelize](https://i.blogs.es/91493f/sequelize/650_1200.png)
 
 ![mysql](https://upload.wikimedia.org/wikipedia/en/thumb/6/62/MySQL.svg/1200px-MySQL.svg.png)
 
