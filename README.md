@@ -23,6 +23,14 @@ Hay un archivo llamado Controller.js, en la carpeta de rutas, el cual solo contr
 Aplicacion web cuyo objetivo es automatizar el sistema de evaluacion docente de la Universidad Metropolitana de Caracas. 
 Cada jefe de departamento de la Universidad tiene una cuenta, con la cual podra administrar el proceso de evaluacion del profesorado de su departamento, esto es, activar el sistema de encuestas, consultar los resultados, y realizar la evaluacion de su personal docente.
 
+## Los estudiantes no tienen cuenta:
+###### Solo reciben un email para llenar la encuesta, y solo pueden realizarla una sola vez, ya que el link proporcionado a cada estudiante, esta registrado en la base de datos, y se sabra si ya contesto o no la evaluacion.
+
+## Solo los jefes del dpto y los miembros pertenecientes al Vicerrectorado, tienen una cuenta activa.
+
+![sequelize](https://loveforwriting674.files.wordpress.com/2017/07/metroevalua-sesion-jefe-dpto.png)
+
+## El vicerrectorado tiene todas las funciones del jefe de dpto, y ademas, puede modificar los instrumentos de evalucion.
 
 ###### Activacion del sistema de encuestas: El jefe del departamento selecciona una seccion, y envia a los estudiantes un email con la encuesta correspondiente al docente de dicha seccion.
 
@@ -30,12 +38,7 @@ Cada jefe de departamento de la Universidad tiene una cuenta, con la cual podra 
 
 ###### Autoevaluacion: El jefe de dpto tiene acceso directo al instrumento de evaluacion correspondiente a cada docente, y puede realizar la evaluacion como superior, y puede realizar su autoevaluacion.
 
-## Los estudiantes no tienen cuenta:
-###### Solo reciben un email para llenar la encuesta, y solo pueden realizarla una sola vez, ya que el link proporcionado a cada estudiante, esta registrado en la base de datos, y se sabra si ya contesto o no la evaluacion.
 
-## Solo los jefes del dpto y los miembros pertenecientes al Vicerrectorado, tienen una cuenta activa.
-
-## El vicerrectorado tiene todas las funciones del jefe de dpto, y ademas, puede modificar los instrumentos de evalucion.
 
 ## Hay dos tipos de instrumentos de evaluacion:
 
