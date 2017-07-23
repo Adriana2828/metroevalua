@@ -2,7 +2,7 @@
 
 ## Framework
 ![hapijs](https://camo.githubusercontent.com/16f4a37b7e2086b6e44dcb0cdfaf9e41f5738278/68747470733a2f2f7261772e6769746875622e636f6d2f686170696a732f686170692f6d61737465722f696d616765732f686170692e706e67)
-![hapijs](https://pbs.twimg.com/profile_images/495211744633950209/CvjNepWX.png)
+![hapijs](hhttp://madeinnairobi.co.ke/uploads/companies/a1579446_cloud9_logo.png)
 ## Manejador de Base de Datos
 
 ![mysql](https://upload.wikimedia.org/wikipedia/en/thumb/6/62/MySQL.svg/1200px-MySQL.svg.png)
