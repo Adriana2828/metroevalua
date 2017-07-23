@@ -14,7 +14,7 @@
 
 ## Arquitectura
 
-Se intento implementar la arquitectura MVC (MODEL VIEW CONTROLLER), sin embargo, por cuestiones de tiempo, y falta de familiaridad con hapi js, solo se implementaron los modelos y las vistas, y el aspecto correspondiente a los controladores, esta represtando en la funcion handler de cada ruta del archivo de rutas. En hapi js, una ruta puede devolver una vista, y a esa vista se le puede asignar una funcion handler que hace las veces de controlador. 
+Se intento implementar la arquitectura MVC (MODEL VIEW CONTROLLER), sin embargo, por cuestiones de tiempo, y falta de familiaridad con hapi js, solo se implementaron los modelos y las vistas, y el aspecto correspondiente a los controladores, esta represtado en la funcion handler de cada ruta del archivo de rutas. En hapi js, una ruta puede devolver una vista, y a esa vista se le puede asignar una funcion handler que hace las veces de controlador. 
 
 Hay un archivo llamado Controller.js, en la carpeta de rutas, el cual solo controla el inicio de sesion.
 
