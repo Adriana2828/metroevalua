@@ -1,6 +1,6 @@
 # METROEVALUA
 
-## Framework
+## Framework: Node js 6.0
 ![hapijs](https://camo.githubusercontent.com/16f4a37b7e2086b6e44dcb0cdfaf9e41f5738278/68747470733a2f2f7261772e6769746875622e636f6d2f686170696a732f686170692f6d61737465722f696d616765732f686170692e706e67)
 ![hapijs](http://madeinnairobi.co.ke/uploads/companies/a1579446_cloud9_logo.png)
 ## Manejador de Base de Datos
@@ -57,3 +57,6 @@ y puede realizar la evaluacion como superior, y puede realizar su autoevaluacion
 ![login](https://loveforwriting674.files.wordpress.com/2017/07/metroevalua-encuesta2.png)
 
 ![login](https://loveforwriting674.files.wordpress.com/2017/07/metroevalua-login.png)
+
+# Para enviarle el email a los estudiantes y profesores se utilizo sendgrid para node js version 6.0
+![sequelize](https://sendgrid.com/wp-content/themes/sgdotcom/pages/resource/brand/2016/SendGrid-Logo.png)
