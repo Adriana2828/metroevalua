@@ -41,5 +41,7 @@ Cada jefe de departamento de la Universidad tiene una cuenta, con la cual podra 
 
 ###### A (La encuesta que llenan los estudiantes) y B (La encuesta que llenan los profesores) 
 ![login](https://loveforwriting674.files.wordpress.com/2017/07/metroevalua-encuesta-completa.png)
+![login](https://loveforwriting674.files.wordpress.com/2017/07/metro-evalua-encuesta.png)
+
 
 ![login](https://loveforwriting674.files.wordpress.com/2017/07/metroevalua-login.png)
