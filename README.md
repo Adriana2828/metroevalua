@@ -12,7 +12,7 @@ Cada jefe de departamento de la Universidad tiene una cuenta, con la cual podra 
 ###### Autoevaluacion: El jefe de dpto tiene acceso directo al instrumento de evaluacion correspondiente a cada docente, y puede realizar la evaluacion como superior, y puede realizar su autoevaluacion.
 
 ## Los estudiantes no tienen cuenta:
-######solo reciben un email para llenar la encuesta, y solo pueden realizarla una sola vez, ya que el link proporcionado a cada estudiante, esta registrado en la base de datos, y se sabra si ya contesto o no la evaluacion.
+###### olo reciben un email para llenar la encuesta, y solo pueden realizarla una sola vez, ya que el link proporcionado a cada estudiante, esta registrado en la base de datos, y se sabra si ya contesto o no la evaluacion.
 
 ## Solo los jefes del dpto y los miembros pertenecientes al Vicerrectorado, tienen una cuenta activa.
 
